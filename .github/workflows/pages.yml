@@ -1,0 +1,19 @@
+name: pages
+
+on:
+  push:
+    branches: [ "main" ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  publish:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: jetli/trunk-action@v0.4.0
+    - name: Build
+      run: trunk build --release --public-url=tips
