@@ -25,7 +25,7 @@ impl Component for Button {
     type Message = ButtonMsg;
     type Properties = ButtonProps;
 
-    fn create(ctx: &Context<Self>) -> Self {
+    fn create(_ctx: &Context<Self>) -> Self {
         Self
     }
 
@@ -53,7 +53,7 @@ fn App() -> Html {
     };
 
     html! {
-        <div style="font-size: 200%">
+        <div style="font-size: 200%;font-family: sans-serif">
             <h1 style="text-align: center">{ format!("{:.2}€", *counter as f32 / 100.0) }</h1>
             <div style="display: grid;grid-template-columns: auto auto;height: 80vh;">
                 <Button n=10 onclick={onclick.clone()} />
