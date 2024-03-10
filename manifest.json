@@ -1,6 +1,13 @@
 {
   "name": "Tips PWA",
   "short_name": "Tips PWA",
+  "icons": [
+    {
+      "src": "./icon-256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    }
+  ],
   "start_url": "./index.html",
   "display": "standalone"
 }
