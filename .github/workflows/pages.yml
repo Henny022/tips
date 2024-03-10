@@ -39,7 +39,7 @@ jobs:
     - name: Install trunk
       uses: jetli/trunk-action@v0.4.0
     - name: Build
-      run: trunk build --release --public-url=tips
+      run: trunk build --release --public-url /tips/
     - name: Setup Pages
       uses: actions/configure-pages@v4
     - name: Upload artifact
